@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         break;
         case "/aboutus":
-            res.statusCode = 301;
+            res.statusCode = 301; //dusre page pr jane ke liye 
             res.setHeader('Location','/about')
             res.end();
             break;
@@ -52,7 +52,7 @@ const server = http.createServer((req, res) => {
 
 });
  //port number, host name , cb
-server.listen(3000, 'localhost', () => {
+server.listen(3000, 'localhost', () => { //browser me server bnane ke liye
     console.log("server is listening on port 3000");
 });
 
